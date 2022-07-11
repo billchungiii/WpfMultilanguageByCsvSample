@@ -1,2 +1,2 @@
 # WpfMultilanguageByCsvSample
-post  https://dotblogs.com.tw/Article/Edit?id=cceb26c3-1421-4088-94cf-c98828af0731
+post  https://dotblogs.com.tw/billchung/2022/07/11/184656
