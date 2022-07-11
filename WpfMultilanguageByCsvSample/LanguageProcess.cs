@@ -10,7 +10,7 @@ namespace WpfMultilanguageByCsvSample
 {
     internal class LanguageProcess
     {
-        private const string DefaultFileName = "Default.txt";        
+        private const string DefaultFileName = "Default.txt";
         public static ResourceDictionary Resources { get; private set; } = new ResourceDictionary();
 
         public static void SetLanguage(string path)
@@ -19,7 +19,7 @@ namespace WpfMultilanguageByCsvSample
             {
                 path = DefaultFileName;
             }
-          
+
             foreach (var item in File.ReadLines(path).Select(line => line.Split(',')))
             {
                 Resources[item[0]] = item[1];

@@ -9,12 +9,12 @@ using System.Windows;
 namespace WpfMultilanguageByCsvSample
 {
 
-   
+
     /// <summary>
     /// App.xaml 的互動邏輯
     /// </summary>
     public partial class App : Application
-    {  
+    {
         public static LanguageCode CurrentLanguage { get; private set; }
 
         public static void SetCurrentLanguage(LanguageCode code)
@@ -29,7 +29,7 @@ namespace WpfMultilanguageByCsvSample
                 LanguageProcess.SetLanguage("zh-tw.txt");
                 CurrentLanguage = LanguageCode.zhtw;
             }
-        }       
+        }
 
         public App()
         {

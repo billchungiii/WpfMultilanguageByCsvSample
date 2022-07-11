@@ -18,22 +18,22 @@ namespace WpfMultilanguageByCsvSample
     /// <summary>
     /// MainWindow.xaml 的互動邏輯
     /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+ public partial class MainWindow : Window
+ {
+     public MainWindow()
+     {
+         InitializeComponent();
+     }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (App.CurrentLanguage == LanguageCode.Default)
-            {
-                App.SetCurrentLanguage(LanguageCode.zhtw);
-                return;
-            }
+     private void Button_Click(object sender, RoutedEventArgs e)
+     {
+         if (App.CurrentLanguage == LanguageCode.Default)
+         {
+             App.SetCurrentLanguage(LanguageCode.zhtw);
+             return;
+         }
 
-            App.SetCurrentLanguage(LanguageCode.Default);
-        }
-    }
+         App.SetCurrentLanguage(LanguageCode.Default);
+     }
+ }
 }
