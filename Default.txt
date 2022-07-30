@@ -1,0 +1,3 @@
+﻿Add,Add
+Delete,Delete
+ChangeLanguage,To zh-tw
