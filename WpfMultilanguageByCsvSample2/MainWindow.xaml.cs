@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfMultilanguageByCsvSample
+namespace WpfMultilanguageByCsvSample2
 {
     /// <summary>
     /// MainWindow.xaml 的互動邏輯
@@ -27,13 +27,16 @@ namespace WpfMultilanguageByCsvSample
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (App.CurrentLanguage == LanguageCode.Default)
+            var proxy = ((App)Application.Current).LanguageProxy;
+            if ( proxy.CurrentLanguage == LanguageCode.Default)
             {
-                App.SetCurrentLanguage(LanguageCode.zhtw);
-                return;
+                proxy.CurrentLanguage  = LanguageCode.zhtw;
+            }
+            else
+            {
+                proxy.CurrentLanguage = LanguageCode.Default;
             }
 
-            App.SetCurrentLanguage(LanguageCode.Default);
         }
     }
 }

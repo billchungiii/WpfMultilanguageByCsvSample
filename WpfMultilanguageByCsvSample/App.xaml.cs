@@ -27,8 +27,10 @@ namespace WpfMultilanguageByCsvSample
             else if (code == LanguageCode.zhtw)
             {
                 LanguageProcess.SetLanguage("zh-tw.txt");
-                CurrentLanguage = LanguageCode.zhtw;
+                CurrentLanguage = LanguageCode.zhtw;                
             }
+
+           
         }
 
         public App()

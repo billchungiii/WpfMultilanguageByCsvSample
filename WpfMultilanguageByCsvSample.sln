@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMultilanguageByCsvSample", "WpfMultilanguageByCsvSample\WpfMultilanguageByCsvSample.csproj", "{405CBEF1-9F19-467B-A9F9-23CA96F3FF21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMultilanguageByCsvSample2", "WpfMultilanguageByCsvSample2\WpfMultilanguageByCsvSample2.csproj", "{4053CB33-2461-45A7-9DA9-9D1671DE4321}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{405CBEF1-9F19-467B-A9F9-23CA96F3FF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{405CBEF1-9F19-467B-A9F9-23CA96F3FF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{405CBEF1-9F19-467B-A9F9-23CA96F3FF21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4053CB33-2461-45A7-9DA9-9D1671DE4321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4053CB33-2461-45A7-9DA9-9D1671DE4321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4053CB33-2461-45A7-9DA9-9D1671DE4321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4053CB33-2461-45A7-9DA9-9D1671DE4321}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
