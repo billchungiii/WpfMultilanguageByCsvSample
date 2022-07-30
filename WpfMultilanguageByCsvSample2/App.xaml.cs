@@ -93,8 +93,7 @@ namespace WpfMultilanguageByCsvSample2
         {
             var app = Application.Current as IMultilanguage;
             if (app != null)
-            {
-                //app.LanguageProxy.LanguageChanged +=WeakEventManager <LanguageProxy,LanguageCode>.AddHandler ()
+            {                
                 EventHandler<LanguageChangedEventArgs> handler = new EventHandler<LanguageChangedEventArgs>(LanguageProxy_LanguageChanged);
                 WeakEventManager<LanguageProxy, LanguageChangedEventArgs>.AddHandler(app.LanguageProxy, "LanguageChanged", handler);
             }
