@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfMultilanguageByCsvSample2"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext >
+        <local:MainViewModel />
+    </Window.DataContext>
     <Window.Resources >
         <local:MultilanguageObjectDataProvider x:Key="genderEnum" MethodName="GetValues"
                             ObjectType="{x:Type sys:Enum}">
@@ -15,20 +19,19 @@
             </ObjectDataProvider.MethodParameters>
         </local:MultilanguageObjectDataProvider>
     </Window.Resources>
-    <StackPanel Orientation="Horizontal"  >
-        <StackPanel.Resources >
+    <WrapPanel Orientation="Horizontal"  >
+        <WrapPanel.Resources >
             <Style TargetType="Button" >
                 <Setter Property="Width" Value="120"/>
                 <Setter Property="Height" Value="36"/>
                 <Setter Property="Margin" Value="12"/>
             </Style>
-        </StackPanel.Resources>
+        </WrapPanel.Resources>
         <Button Content="{DynamicResource Add}" />
         <Button Content="{DynamicResource Delete}"/>
-        <Button Content="{DynamicResource ChangeLanguage}" Click="Button_Click"/>
-        <ComboBox x:Name="combobox" ItemsSource="{Binding Source={StaticResource genderEnum}}"
-                  VerticalAlignment="Top" Margin="16" Height="40">
-
-        </ComboBox>
-    </StackPanel>
+        <Button Content="{DynamicResource ChangeLanguage}" Command="{Binding ChangeLanguage}"/>
+        <local:MyComboBox x:Name="combobox" ItemsSource="{Binding Source={StaticResource genderEnum}}"                  
+                  VerticalAlignment="Top" Margin="12" Height="36" Width="72">
+        </local:MyComboBox>
+    </WrapPanel>
 </Window>

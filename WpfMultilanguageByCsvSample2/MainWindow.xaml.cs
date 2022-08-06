@@ -25,18 +25,6 @@ namespace WpfMultilanguageByCsvSample2
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var proxy = ((App)Application.Current).LanguageProxy;
-            if ( proxy.CurrentLanguage == LanguageCode.Default)
-            {
-                proxy.CurrentLanguage  = LanguageCode.zhtw;
-            }
-            else
-            {
-                proxy.CurrentLanguage = LanguageCode.Default;
-            }
-
-        }
+       
     }
 }
