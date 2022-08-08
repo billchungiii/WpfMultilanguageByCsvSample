@@ -17,9 +17,7 @@ namespace WpfMultilanguageByCsvSample2
     }
     public class GenderTypeConverter : EnumConverter
     {
-        public GenderTypeConverter(Type type) : base(type)
-        {
-        }
+        public GenderTypeConverter(Type type) : base(type) {}
 
         public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
         {
@@ -30,8 +28,5 @@ namespace WpfMultilanguageByCsvSample2
             else
             { return string.Empty; }
         }
-    }
-
-
-    
+    }    
 }

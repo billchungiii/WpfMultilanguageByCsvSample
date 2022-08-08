@@ -31,7 +31,8 @@
         <Button Content="{DynamicResource Delete}"/>
         <Button Content="{DynamicResource ChangeLanguage}" Command="{Binding ChangeLanguage}"/>
         <local:MyComboBox x:Name="combobox" ItemsSource="{Binding Source={StaticResource genderEnum}}"                  
-                  VerticalAlignment="Top" Margin="12" Height="36" Width="72">
+                  VerticalAlignment="Top" Margin="12" Height="36" Width="72"
+                  SelectedItem="{Binding SelectedItem}">
         </local:MyComboBox>
     </WrapPanel>
 </Window>

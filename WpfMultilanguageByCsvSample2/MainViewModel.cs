@@ -15,7 +15,6 @@ namespace WpfMultilanguageByCsvSample2
         private Gender _selectedItem;
 
         public event PropertyChangedEventHandler PropertyChanged;
-
         private void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -27,10 +26,9 @@ namespace WpfMultilanguageByCsvSample2
             set
             {
                 if (_selectedItem != value)
-                {
-                    _selectedItem = value;
-                    OnPropertyChanged(nameof(SelectedItem));
-                    Debug.WriteLine($"selected item is {_selectedItem }");
+                {                    
+                    _selectedItem = value;                   
+                    OnPropertyChanged(nameof(SelectedItem));                    
                 }
             }
 
